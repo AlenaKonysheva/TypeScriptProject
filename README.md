@@ -3,34 +3,57 @@
 This project uses Playwright Test to run both UI (E2E) and API/contract tests.
 
 ### Run all tests
+
 ```bash
 npx playwright test
 ```
+
 ### Run only UI tests
+
 ```bash
 npx playwright test --project=chromium
 ```
+
 ### Run only API and contract tests
+
 ```bash
 npx playwright test --project=api
 ```
+
 ### Run a specific test file
+
 ```bash
 npx playwright test tests/e2e/login.spec.ts
 ```
+
 ### Run tests in headed mode (see the browser)
+
 ```bash
 npx playwright test --headed
 ```
+
 ### Run tests in debug mode
+
 ```bash
 npx playwright test --debug
 ```
+
 ### Viewing Test Reports
+
 ```bash
 npx playwright show-report
 ```
+
+## Test Coverage
+
+| Suite    | Target                       | Scenarios                             |
+|----------|------------------------------|---------------------------------------|
+| E2E UI   | saucedemo.com                | login, sorting, cart, checkout        |
+| API      | jsonplaceholder.typicode.com | GET, POST, error handling             |
+| Contract | jsonplaceholder.typicode.com | Post/PostsList JSON Schema validation |
+
 ### TypeScriptProject structure
+
 ```
 TypeScriptProject/
 ├── .github/
