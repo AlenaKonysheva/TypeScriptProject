@@ -1,0 +1,18 @@
+{
+  "name": "typescript-project",
+  "version": "1.0.0",
+  "description": "E2E and API/Contract testing portfolio built with Playwright and TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium",
+    "test:api": "playwright test --project=api",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^26.6.2",
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "typescript": "^5.0.0"
+  }
+}
